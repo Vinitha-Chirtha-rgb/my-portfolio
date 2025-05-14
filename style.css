@@ -1,0 +1,261 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+.typewriter {
+  color: white;
+}
+
+
+/* Navigation Bar */
+.nav {
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.nav h1 {
+  font-size: 1.8rem;
+}
+
+.nav a {
+  margin: 0 1rem;
+  font-weight: 500;
+}
+
+/* Sections */
+.section {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2115c9;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  background-color: #1f1f1f;
+  border-radius: 20px;
+  padding: 4rem 2rem;
+  margin-top: 1rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background-color: #2115c9;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #2115c9;
+}
+
+/* Profile Photo */
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid :#2115c9;
+  box-shadow: 0 0 10px #ff4081;
+}
+
+.about-box {
+  background-color: #1f1f1f;
+  padding: 2rem;
+  border-radius: 12px;
+  line-height: 1.6;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  border: 3px solid transparent;
+  border-image: linear-gradient(45deg, #58a6ff, #1f6feb) 1;
+}
+
+.timeline {
+  list-style: none;
+  padding-left: 0;
+}
+
+.timeline li {
+  margin-bottom: 1rem;
+}
+
+/* Projects */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: #1f1f1f;
+  padding: 1.5rem;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  border: 3px solid transparent;
+  border-image: linear-gradient(45deg, #58a6ff, #1f6feb) 1;
+}
+
+
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  /* Space between each skill group */
+}
+
+.skills-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;  /* Space between each skill in a group */
+}
+
+.skills-group h3 {
+    font-size: 1.5rem;
+    color: #3498db;  /* Add a blue color to the group title */
+    margin-bottom: 10px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill {
+    background-color: #34495e;
+    color: white;
+    padding: 5px 12px; /* Reduced padding for smaller boxes */
+    border-radius: 8px;  /* Slightly smaller border radius */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;  /* Reduced height */
+    font-size: 0.9rem;  /* Smaller font size */
+    transition: background-color 0.3s;
+}
+
+.skill-icon {
+    font-size: 1.2rem;  /* Smaller emoji size */
+    margin-right: 8px;  /* Reduced margin for better spacing */
+}
+
+.skill-name {
+    font-size: 1rem;  /* Smaller text size */
+    font-weight: bold;
+}
+
+.skill:hover {
+    background-color: #1abc9c;
+}
+
+
+
+
+/* Contact */
+#contact p {
+  margin: 0.5rem 0;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.modal-content {
+  background-color: #1e1e1e;
+  margin: auto;
+  padding: 2rem;
+  border: 1px solid #888;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 12px;
+  color: #fff;
+}
+
+.close {
+  color: #ff4081;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background-color: #1e1e1e;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+  color: #aaa;
+}
